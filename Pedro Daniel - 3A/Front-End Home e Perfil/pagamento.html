@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Pagamento</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="./pagamento.css">
+<script src="./pagamento.js"></script>
+<link rel="icon" href="imgs/logitik.png">
+
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="pix.html">Pix</a></li>
+            <li><a href="boleto.html">Boleto</a></li>
+            <li><a href="pagamento.html">Cartão</a></li>
+            <li><a href="index.html">Home</a></li>
+
+
+        </ul>
+    </nav>
+
+<form name="meu_form">
+
+  <h1>Cartão</h1>
+
+  <input type="text" id="nomeid" placeholder="seu nome" required="required" name="nome" />
+  <label for="nome">Nome do titular</label>
+
+  <input type="num" id="numid" placeholder="xxx-xxx-xxx" name="num" />
+  <label for="num">Número</label>
+
+  <input type="text" id="foneid" placeholder="xxx" name="cv" />
+  <label for="cv">CV</label>
+
+  
+  <input type="cpf" id="cpfid" placeholder="xxx.xxx.xxx-xx" name="cpf" />
+  <label for="cpf">CPF</label>
+
+  <input type="text" id="emailid" placeholder="Escolha a Operadora" list="faixa">
+  <label for="email">Operadora</label>
+      <datalist id="faixa">
+          <option >Visa</option>
+          <option >Mastercard</option>
+          <option >Elo</option>
+      </datalist>
+
+  <textarea placeholder="Deixe sua opnião"></textarea>
+
+  <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+</form>
+</body>
+</html>

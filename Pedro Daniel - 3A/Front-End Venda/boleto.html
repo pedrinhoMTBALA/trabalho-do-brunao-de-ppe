@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Pagamento</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="./pagamento.css">
+<script src="./pagamento.js"></script>
+<link rel="icon" href="imgs/logitik.png">
+
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="pix.html">Pix</a></li>
+            <li><a href="boleto.html">Boleto</a></li>
+            <li><a href="index.html">Cartão</a></li> 
+             
+
+
+        </ul>
+    </nav>
+
+<form name="meu_form">
+
+  <h1>Boleto</h1>
+
+  <input type="text" id="nomeid" placeholder="seu nome" required="required" name="nome" />
+  <label for="nome">Nome</label>
+
+  <input type="tel" id="foneid" placeholder="(xx)xxxxx-xxxx" name="fone" />
+  <label for="fone">Fone</label>
+
+  <input type="email" id="emailid" placeholder="seuemail@mail.com" name="email" />
+  <label for="email">Email</label>
+
+  
+  <input type="cpf" id="cpfid" placeholder="xxx.xxx.xxx-xx" name="cpf" />
+  <label for="cpf">CPF</label>
+
+  <textarea placeholder="Deixe sua opnião"></textarea>
+
+  <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+</form>
+</body>
+</html>
